@@ -1,3 +1,8 @@
-<p>
-  dashboard works!
-</p>
+<p>dashboard</p>
+<ul>
+  <li *ngFor = "let pokemon of (res | async)?.results">
+      Name : {{pokemon.name}}
+  </li>
+</ul>
+
+

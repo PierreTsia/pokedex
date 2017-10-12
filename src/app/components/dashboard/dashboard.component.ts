@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { PokeServiceService } from '../../services/poke-service.service';
+import {Pokemon} from '../../pokemon';
 
 @Component({
   selector: 'app-dashboard',
@@ -6,10 +9,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-
-  constructor() { }
+  res: any = [];
+  pokemons: Pokemon[] = [];
+  constructor(private pokeservice: PokeServiceService) { }
 
   ngOnInit() {
+
+    this.res = this.pokeservice.catchEmAll();
+    this.res.subscribe((data) => {
+      console.log("moncul")
+      console.log(data);
+    });
+   }
   }
 
-}
+
