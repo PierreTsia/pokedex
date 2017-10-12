@@ -1,0 +1,79 @@
+/* Navigation */
+
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    justify-content: space-between;
+    align-items: stretch;
+
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo img
+{
+    width: 90px;
+    height: 90px;
+    margin: 20px 60px;
+}
+
+nav ol
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav ol li
+{
+    margin-right: 60px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: white;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: white;
+    border-bottom: 3px solid #2C6BB9;
+}
+
+/* Bannière */
+
+#banniere_image
+{
+    margin-top: 15px;
+    height: 300px;
+    border-radius: 5px;
+    background: url("http://pokemon.esy.es/img/banner3.png") no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}
+
+#banniere_description
+{
+    position: absolute;
+    bottom: 0;
+    border-radius: 0px 0px 5px 5px;
+    width: 99.5%;
+    height: 33px;
+    padding-top: 15px;
+    padding-left: 4px;
+    background-color: rgba(24,24,24,0.8);
+    color: white;
+    font-size: 25px;
+    
+}
+

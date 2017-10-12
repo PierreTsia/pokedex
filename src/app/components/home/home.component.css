@@ -2,11 +2,15 @@ input {
     font-family: monospace;
 }
 
-body {
-    background: #ECEFF1;
-    box-sizing: border-box;
+#logo img
+{
+    width: 90px;
+    height: 90px;
 }
-
+.pokemon {
+    height: 800px;
+    border: 1px solid black;
+}
 img {
     margin: 0;
     padding: 0;
@@ -18,24 +22,71 @@ form {
 }
 
 h1 {
-    letter-spacing: -5px;
-    font-family: Arial, Helvetica, sans-serif, cursive;
-    color: #ffcb05;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #0071b9;
+    margin-top: 50px; 
     text-align: center;
-    font-size: 151px;
-    margin: 10px;
 }
 
-input {
+.textSearch {
     width: 100%;
-    margin: 0;
-    font-size: 36px;
+    margin: 10px 0;
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
     padding: 10px;
     color: #1d1d1d;
     border: 5px solid #0071b9;
     border-width: 0 0 5px;
-    outline: 0;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
 }
+
+.btnSearch {
+        display: inline-block;
+        padding: 1em;
+        background-color: #2C6BB9;
+        text-decoration: none;
+        color: white;
+        border-radius: 0.5%;
+        font-size: 20px;
+}
+
+/* Radial Out */
+.hvr-radial-out {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    overflow: hidden;
+    background: #2098D1;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+  .hvr-radial-out:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #F9C65F;
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-radial-out:hover, .hvr-radial-out:focus, .hvr-radial-out:active {
+    color: white;
+  }
+  .hvr-radial-out:hover:before, .hvr-radial-out:focus:before, .hvr-radial-out:active:before {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+  }
