@@ -7,9 +7,10 @@ input {
     width: 90px;
     height: 90px;
 }
-
-
-
+.pokemon {
+    height: 800px;
+    border: 1px solid black;
+}
 img {
     margin: 0;
     padding: 0;
