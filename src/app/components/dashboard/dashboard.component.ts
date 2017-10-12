@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { PokeServiceService } from '../../services/poke-service.service';
 import {Pokemon} from '../../pokemon';
+import { Routes, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',

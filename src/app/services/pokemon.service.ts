@@ -6,7 +6,7 @@ import "rxjs";
 import { Pokemon } from '../pokemon'
 
 @Injectable()
-export class PokeServiceService {
+export class PokemonService {
 
 
   constructor(private http: HttpClient) { }
