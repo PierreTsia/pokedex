@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { PokeServiceService } from '../../services/poke-service.service';
+import { PokemonService } from '../../services/pokemon.service';
 import {Pokemon} from '../../pokemon';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -12,7 +12,7 @@ import { Routes, RouterModule } from '@angular/router';
 export class DashboardComponent implements OnInit {
   res: any = [];
   pokemons: Pokemon[] = [];
-  constructor(private pokeservice: PokeServiceService) { }
+  constructor(private pokeservice: PokemonService) { }
 
   ngOnInit() {
 
