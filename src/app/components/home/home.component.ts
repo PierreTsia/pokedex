@@ -13,8 +13,8 @@ import { DashboardComponent } from '../dashboard/dashboard.component';
 import { DetailsComponent } from '../details/details.component';
 import { MyPokedexComponent } from '../my-pokedex/my-pokedex.component';
 // SERVICES
-import { PokeServiceService } from '../../services/poke-service.service';
-import { SearchServiceService } from '../../services/search-service.service';
+import { PokemonService } from '../../services/pokemon.service';
+import { SearchService } from '../../services/search.service';
 
 
 @Component({
