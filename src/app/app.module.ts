@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {Routes, RouterModule} from "@angular/router";
 
+import { routes } from './app.routes';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -8,6 +10,10 @@ import { HomeComponent } from './components/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { DetailsComponent } from './components/details/details.component';
 import { MyPokedexComponent } from './components/my-pokedex/my-pokedex.component';
+
+
+// ANIMATION
+//import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,9 +26,14 @@ import { MyPokedexComponent } from './components/my-pokedex/my-pokedex.component
     MyPokedexComponent
   ],
   imports: [
-    BrowserModule
+    RouterModule.forRoot(routes, {useHash: true}),
+    BrowserModule,
+    //FormsModule,
+    //AngularFireModule.initializeApp(environment.firebase),
+    //AngularFireAuthModule,
+    //BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [/* AuthGuard, AuthService, AngularFireDatabase */],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
