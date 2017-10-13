@@ -1,11 +1,12 @@
-<p>
-  details works!
-</p>
+
+<div class="container">
+<h1>{{(pokeDetails | async)?.name}} details : </h1>
 <ul>
-  <li class="details-item">{{(pokeDetails | async)?.name}}</li>
+  <li class="details-item">Name : {{(pokeDetails | async)?.name}}</li>
   <li class="details-item"><img [src]="(pokeDetails | async)?.sprites.front_default" /></li>
   <li class="details-item"> <span [ngClass]="getClass((pokeDetails | async)?.types[0].type.name)" class="types">{{(pokeDetails | async)?.types[0].type.name}} </span> <span [ngClass]="getClass((pokeDetails | async)?.types[1].type.name)" class="types">{{(pokeDetails | async)?.types[1].type.name}} </span></li>
   <li class="details-item"></li>
   <li class="details-item"></li>
 </ul>
+</div>
 

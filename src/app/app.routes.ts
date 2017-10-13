@@ -23,8 +23,7 @@ export const routes:Routes = [
     {path: 'footer', component: FooterComponent},
     {path: 'header', component: HeaderComponent},
     {path: 'home', component: HomeComponent},
-	{path: 'my-pokedex', component: MyPokedexComponent},
-    {path: '**', component: HomeComponent},
+	{path: 'my-pokedex', component: MyPokedexComponent}
    
     
     // FIREBASE
