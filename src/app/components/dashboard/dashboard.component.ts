@@ -4,6 +4,7 @@ import { Routes, RouterModule, ActivatedRoute, Router } from '@angular/router';
 
 import { PokemonService } from '../../services/pokemon.service';
 import { Pokemon } from '../../pokemon';
+import { Routes, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
