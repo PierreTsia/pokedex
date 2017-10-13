@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {Routes, RouterModule} from "@angular/router";
+import {HttpClientModule} from '@angular/common/http';
 
 import { routes } from './app.routes';
 import { AppComponent } from './app.component';
@@ -10,6 +11,7 @@ import { HomeComponent } from './components/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { DetailsComponent } from './components/details/details.component';
 import { MyPokedexComponent } from './components/my-pokedex/my-pokedex.component';
+import { PokemonService } from './services/pokemon.service'
 
 
 // ANIMATION
@@ -32,8 +34,11 @@ import { MyPokedexComponent } from './components/my-pokedex/my-pokedex.component
     //AngularFireModule.initializeApp(environment.firebase),
     //AngularFireAuthModule,
     //BrowserAnimationsModule
+    BrowserModule,
+    HttpClientModule,
   ],
-  providers: [/* AuthGuard, AuthService, AngularFireDatabase */],
+  providers: [PokemonService],
+ /* AuthGuard, AuthService, AngularFireDatabase */
   bootstrap: [AppComponent]
 })
 export class AppModule { }
