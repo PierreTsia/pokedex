@@ -1,10 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { Router } from '@angular/router';
-// FIREBASE
-//import { AngularFireAuthModule } from 'angularfire2/auth';
-//import { AuthService } from './auth.service';
-//import { AuthGuard } from './authguard.service';
 
 // HOME
 import { HeaderComponent } from '../header/header.component';
@@ -25,11 +21,10 @@ import { SearchService } from '../../services/search.service';
 export class HomeComponent implements OnInit {
 
   constructor(private router: Router) {
-
-  
-
+      
    }
 
+   
   ngOnInit() {
   }
 
