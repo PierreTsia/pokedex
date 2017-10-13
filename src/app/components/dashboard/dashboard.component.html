@@ -1,9 +1,7 @@
 <p>dashboard</p>
 <ul>
-  <li *ngFor = "let pokemon of (res | async)?.results">
-     <div class="row"> Name : {{pokemon.name}}</div>
-     <div class="row">  Id : {{pokemon.id}}</div>
-  </li>
-</ul>
+ <div class="col-md-3" *ngFor = "let pokemon of (res | async)?.results">
+      {{pokemon.name}}</div>
+ 
 
 

@@ -12,7 +12,7 @@ export class PokemonService {
   constructor(private http: HttpClient) { }
 
   catchEmAll() {
-    return this.http.get("http://pokeapi.salestock.net/api/v2/pokemon-form/").share();
+    return this.http.get("http://pokeapi.salestock.net/api/v2/pokemon/?limit=40&offset=0").share();
   }
 
 }
