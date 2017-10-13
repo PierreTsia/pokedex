@@ -1,3 +1,13 @@
-div {
-    background-image: url("https://gamer-network.fr/wp-content/uploads/2017/01/pokemon-soleil-lune.jpg");
+.imgPoke {
+   width: 100%;
+   height: 500px;   
+}
+.blabla {
+    font-size: 22px;
+    font-style: italic;
+    color: #2C6BB9;
+    text-align: center;
+}
+.love {
+    color: pink;
 }
