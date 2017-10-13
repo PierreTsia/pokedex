@@ -10,7 +10,6 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { DetailsComponent } from './components/details/details.component';
-import { MyPokedexComponent } from './components/my-pokedex/my-pokedex.component';
 import { PokemonService } from './services/pokemon.service'
 
 
@@ -24,21 +23,15 @@ import { PokemonService } from './services/pokemon.service'
     FooterComponent,
     HomeComponent,
     DashboardComponent,
-    DetailsComponent,
-    MyPokedexComponent
+    DetailsComponent
   ],
   imports: [
     RouterModule.forRoot(routes, {useHash: true}),
     BrowserModule,
-    //FormsModule,
-    //AngularFireModule.initializeApp(environment.firebase),
-    //AngularFireAuthModule,
-    //BrowserAnimationsModule
     BrowserModule,
     HttpClientModule,
   ],
   providers: [PokemonService],
- /* AuthGuard, AuthService, AngularFireDatabase */
   bootstrap: [AppComponent]
 })
 export class AppModule { }

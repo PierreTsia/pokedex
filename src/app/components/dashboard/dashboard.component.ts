@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { PokemonService } from '../../services/pokemon.service';
-import {Pokemon} from '../../pokemon';
+import { Pokemon } from '../../pokemon';
 import { Routes, RouterModule } from '@angular/router';
 
 @Component({
