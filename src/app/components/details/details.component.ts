@@ -38,4 +38,28 @@ export class DetailsComponent implements OnInit {
     }
   }
 
+  getClass(pokemonType: string) {
+
+    return { 
+          'poisonClass': pokemonType == 'poison', 
+          'grassClass': pokemonType =='grass', 
+          'normalClass': pokemonType =='normal', 
+          'fireClass': pokemonType == 'fire', 
+          'waterClass': pokemonType =='water', 
+          'electricClass': pokemonType =='electric',
+          'iceClass': pokemonType == 'ice', 
+          'fightingClass': pokemonType =='fighting', 
+          'groundClass': pokemonType =='ground',
+          'flyingClass': pokemonType == 'flying', 
+          'psychicClass': pokemonType =='psychic', 
+          'bugClass': pokemonType =='bug',
+          'rockClass': pokemonType == 'rock', 
+          'ghostClass': pokemonType =='ghost', 
+          'dragonClass': pokemonType =='dragon',
+          'darkClass': pokemonType =='dark',
+          'steelClass': pokemonType == 'steel', 
+          'fairyClass': pokemonType =='fairy'
+          };
+  }
+
 }

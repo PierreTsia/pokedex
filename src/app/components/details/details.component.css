@@ -5,3 +5,102 @@
 .details-item:first-child{
     font-weight: bolder;
 }
+
+
+
+
+/* TYPES CLASSES */
+
+.types{
+    padding: 5px;
+    margin-right: 5px;
+    color:white;
+    text-align: center;
+    width: 60px;
+    display: inline-block;
+    border-radius:5px;
+
+}
+
+.poisonClass {
+    background-color: #B6099E;
+    
+}
+
+.grassClass {
+    background-color: #24D252;
+    
+}
+
+.normalClass{
+
+    background-color: #A3AA75;
+  
+}
+
+.fireClass {
+    background-color: #FF7600;
+
+}
+
+.waterClass{
+    background-color:#6A84F3;
+
+}
+
+.electricClass{
+    background-color:#FDD400;
+
+}
+
+.iceClass{
+
+    background-color:#78DBDA;
+}
+
+.fightingClass{
+
+    background-color:#6A84F3;
+}
+
+.groundClass{
+    background-color:#E4C25E;
+}
+
+.flyingClass{
+
+    background-color:#B77FF2;
+}
+
+.psychicClass{
+    background-color:#FF2C7C;
+}
+
+.bugClass{
+    background-color:#98BF0D;
+}
+
+.rockClass{
+    background-color:#B9A32B;
+}
+
+.ghostClass{
+    background-color:#7C4D98;
+}
+
+.dragonClass{
+    background-color:#9000FB;
+}
+
+.darkClass{
+
+    background-color:#755847;
+}
+
+.steelClass{
+    background-color:#B9B4D0;
+}
+
+.fairyClass{
+    background-color:#FF85DD;
+}
