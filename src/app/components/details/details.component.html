@@ -1,3 +1,11 @@
 <p>
   details works!
 </p>
+<ul>
+  <li class="details-item">{{(pokeDetails | async)?.name}}</li>
+  <li class="details-item"><img [src]="(pokeDetails | async)?.sprites.front_default" /></li>
+  <li class="details-item">{{(pokeDetails | async)?.name}}</li>
+  <li class="details-item"></li>
+  <li class="details-item"></li>
+</ul>
+

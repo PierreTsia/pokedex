@@ -18,13 +18,14 @@ import { SearchService } from './services/search.service';
 
 export const routes:Routes = [
 	{path: '', redirectTo: 'home', pathMatch: 'full'},
-	{path: 'dashboard', component: DashboardComponent},
-    {path: 'details', component: DetailsComponent},
+	{path: 'pokemons/page/:page', component: DashboardComponent},
+    {path: 'pokemon/:name', component: DetailsComponent},
     {path: 'footer', component: FooterComponent},
     {path: 'header', component: HeaderComponent},
     {path: 'home', component: HomeComponent},
 	{path: 'my-pokedex', component: MyPokedexComponent},
-	{path: '**', component: HomeComponent}
+    {path: '**', component: HomeComponent},
+   
     
     // FIREBASE
     //{ path: 'MyPokedex', component: MyPokedexComponent, canActivate: [AuthGuard]},

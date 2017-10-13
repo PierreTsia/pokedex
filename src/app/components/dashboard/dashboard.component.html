@@ -1,7 +1,12 @@
 <p>dashboard</p>
 <ul>
- <div class="col-md-3" *ngFor = "let pokemon of (res | async)?.results">
-      {{pokemon.name}}</div>
- 
+  <div (click)="onPokeClicked(pokemon.name)" class="pokemon-listItem hvr-radial-out" *ngFor="let pokemon of (res | async)?.results">
+    {{pokemon.name}}
+  </div>
 
 
+  <div class="row">
+    <a *ngFor="let link of linksArray" [routerLink]="['/pokemons/page', link]" [ngClass]="{'disabled': currentPage == link }"
+      class="pagination">{{link}}</a>
+
+  </div>

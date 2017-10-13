@@ -1,0 +1,7 @@
+.details-item {
+    list-style-type: none;
+}
+
+.details-item:first-child{
+    font-weight: bolder;
+}

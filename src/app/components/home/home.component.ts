@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, SimpleChanges } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { Router } from '@angular/router';
 // FIREBASE
@@ -24,11 +24,15 @@ import { SearchService } from '../../services/search.service';
 })
 export class HomeComponent implements OnInit {
 
+  pokemonName: string;
+
+  onPokemonChosen = (name) => {
+    this.pokemonName = name;
+  };
+
   constructor(private router: Router) {
 
-  
-
-   }
+  }
 
   ngOnInit() {
   }
